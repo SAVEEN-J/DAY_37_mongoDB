@@ -25,7 +25,8 @@ db.product.find().forEach((product)=>{print("PRODUCT NAME:"+" " +product.product
 db.product.find({"product_material":"Soft"},{_id:0})
 
 // 9. Find products which contain product color indigo  and product price 492.00
-db.product.find({product_color: 'indigo', product_price: 492})
+db.product.find({product_color: 'indigo', product_price: 492})//this  is not in data
+db.product.find({product_color: 'indigo', product_price: 911})//this is in data
 
 
 //10 Delete the products which product price value are same
